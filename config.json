@@ -1,0 +1,51 @@
+{
+  "simulation": {
+    "days": 10000,
+    "dt": 0.00396825396
+  },
+  "shares": [
+    { "name": "Google", "price": 175.50, "drift": 0.12, "vol": 0.25, "var": 0.0625, "lambda": 1.5e-7, "volume": 25000000.0 },
+    { "name": "Amazon", "price": 185.20, "drift": 0.15, "vol": 0.30, "var": 0.09, "lambda": 1.8e-7, "volume": 30000000.0 },
+    { "name": "Tesla", "price": 240.00, "drift": 0.20, "vol": 0.55, "var": 0.3025, "lambda": 4.5e-7, "volume": 100000000.0 },
+    { "name": "NVIDIA", "price": 130.50, "drift": 0.25, "vol": 0.45, "var": 0.2025, "lambda": 3.2e-7, "volume": 45000000.0 },
+    { "name": "NextEra Energy", "price": 74.50, "drift": 0.08, "vol": 0.18, "var": 0.0324, "lambda": 1.2e-7, "volume": 15000000.0 },
+    { "name": "Iberdrola", "price": 12.80, "drift": 0.07, "vol": 0.16, "var": 0.0256, "lambda": 1.1e-7, "volume": 20000000.0 },
+    { "name": "Cameco Corp", "price": 48.20, "drift": 0.14, "vol": 0.35, "var": 0.1225, "lambda": 2.5e-7, "volume": 8000000.0 },
+    { "name": "HelioFusion", "price": 10.00, "drift": 0.45, "vol": 0.85, "var": 0.7225, "lambda": 8.5e-6, "volume": 500000.0 },
+    { "name": "SolidGrid", "price": 25.40, "drift": 0.30, "vol": 0.60, "var": 0.3600, "lambda": 5.0e-6, "volume": 1200000.0 },
+    { "name": "BHP Group", "price": 58.00, "drift": 0.09, "vol": 0.25, "var": 0.0625, "lambda": 1.5e-7, "volume": 18000000.0 },
+    { "name": "Freeport-McMoRan", "price": 45.30, "drift": 0.12, "vol": 0.38, "var": 0.1444, "lambda": 2.0e-7, "volume": 10000000.0 },
+    { "name": "Albemarle", "price": 98.50, "drift": 0.15, "vol": 0.45, "var": 0.2025, "lambda": 2.2e-7, "volume": 5000000.0 },
+    { "name": "BioLeach", "price": 8.20, "drift": 0.40, "vol": 0.65, "var": 0.4225, "lambda": 6.5e-6, "volume": 800000.0 },
+    { "name": "Abyss Resources", "price": 15.75, "drift": 0.50, "vol": 0.80, "var": 0.6400, "lambda": 7.0e-6, "volume": 600000.0 },
+    { "name": "RareCycle AI", "price": 22.10, "drift": 0.28, "vol": 0.55, "var": 0.3025, "lambda": 4.0e-6, "volume": 1500000.0 },
+    { "name": "AmmoniaBlue", "price": 5.50, "drift": 0.35, "vol": 0.75, "var": 0.5625, "lambda": 9.0e-6, "volume": 300000.0 }
+  ],
+  "traders": [
+    {
+      "id": 1,
+      "strategy": [1, 1],
+      "capital": 100000,
+      "wallet_shares": [
+        "Google", "Amazon", "Tesla", "NVIDIA", "NextEra Energy", "Iberdrola"
+      ]
+    },
+    {
+      "id": 2,
+      "strategy": [3, 2],
+      "capital": 15000,
+      "wallet_shares": [
+        "Cameco Corp", "HelioFusion", "SolidGrid", "BHP Group", "Freeport-McMoRan", "Albemarle"
+      ]
+    },
+    {
+      "id": 3,
+      "strategy": [3, 1],
+      "capital": 15000,
+      "wallet_shares": [
+        "Cameco Corp", "HelioFusion", "SolidGrid", "BHP Group", "Freeport-McMoRan", "Albemarle"
+      ]
+    }
+    
+  ]
+}
