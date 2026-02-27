@@ -10,13 +10,13 @@ Project done for Avanced Programming course. Project idea by Andrea De Girolamo 
 
 Build and Run:
 Run the following commands from the root directory after cloning the repository:
-'''bash
+```bash
 mkdir build
 cd build
 cmake ..
 make
-'''
+```
 To execute run
-'''bash
+```bash
 ./TradingApp ../config.json
-'''
+```
