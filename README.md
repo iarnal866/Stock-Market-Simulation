@@ -20,3 +20,4 @@ To execute run
 bash''''
 ./TradingApp ../config.json
 '''
+QUIERO AÑADIR ESTA LINEA
