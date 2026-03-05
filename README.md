@@ -37,18 +37,10 @@ where λ represents price sensitivity to trading volume.
 
 The `Strategy` and `Wallet` components manage how traders interact with the market.
 
-- **Risk Clustering:** Shares are categorized into Low, Medium, and High risk groups based on real‑time volatility.
+- **Risk Clustering:** Shares are categorized into Low, Medium, and High risk groups based on volatility.
 - **Strategy Pattern:** Through the `FundsDistributorManager`, traders can employ different allocation logics:
   - **Equal Distribution:** Capital is spread evenly across selected assets.
   - **Markov Chain Logic:** A predictive strategy using transition matrices (Bear vs. Bull states) to estimate the probability of future price increases.
-
-#### 3. Software Architecture & Optimization
-
-The implementation prioritizes memory efficiency and computational speed.
-
-- **Memory Management:** Uses `std::unique_ptr` for strict ownership of `Share` and `Trader` objects.
-- **Performance:** Employs tensor‑style data structures to optimize spatial locality when processing large groups of shares.
-- **Decoupling:** Forward declarations and the Interface Pattern (`IFundDistributor`) minimize compilation dependencies and simplify extension of new trading behaviors.
 
 #### Example of the Simulation for 80 days: 
 ![Simulation Results](SimulationTest.png)
